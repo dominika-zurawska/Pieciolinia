@@ -178,7 +178,7 @@ def index():
         user = f"Witaj {session['username']}"
         files = show_files()
     else :
-        user = 'Jesteś nie zalogowany'
+        user = 'Jesteś niezalogowany'
         files = ["Musisz się zalogować"]
    
     flash_message="False"
