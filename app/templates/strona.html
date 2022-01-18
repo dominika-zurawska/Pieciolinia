@@ -3712,14 +3712,14 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Scroll_Group_2">
-			<img id="n_" src="{{url_for('static', filename='s_image/n_.png')}}" >
+			<img id="n_" src="{{url_for('static', filename='s_image/szkola.png')}}" >
 				
 		</div>
-		<img id="n__ba" src="{{url_for('static', filename='s_image/n__ba.png')}}" >
+		<img id="n__ba" src="{{url_for('static', filename='s_image/korepetycje.png')}}" >
 			
-		<img id="n__bb" src="{{url_for('static', filename='s_image/n__bb.png')}}" >
+		<img id="n__bb" src="{{url_for('static', filename='s_image/ind.png')}}" >
 			
-		<img id="n__bc" src="{{url_for('static', filename='s_image/n__bc.png')}}" >
+		<img id="n__bc" src="{{url_for('static', filename='s_image/praca.png')}}" >
 			
 		<div id="Piciolinia_jest_dobrym_narzdzi">
 			Pięciolinia jest dobrym narzędziem dla szkół podstawowych oraz średnich, wykorzystując innowacyjne techniki pozwala przyswajać wiedzę w ciekawy sposób.
@@ -3771,14 +3771,25 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Pasek_grny">
-		
-		<img id="logo_bx" src="{{url_for('static', filename='s_image/logo_bx.png')}}">
-
-			
+		<svg class="Button_bs">
+			<linearGradient id="Button_bs" spreadMethod="pad" x1="0.5" x2="0.5" y1="1" y2="0">
+				<stop offset="0" stop-color="#7683d9" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#d8a0fe" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect id="Button_bs" rx="5" ry="5" x="0" y="0" width="140.09" height="34.75">
+			</rect>
+		</svg>
+		<div id="Zarejestruj_">
+			<form type="button" role="form" method="GET"  action="{{ url_for('reg') }}">
+				<button>Zarejestruj </button>
+			</form>	
 		</div>
 		<div id="Strona_gwna________O_projekcie">
+		
 			<span><a href="Strona_Gowna">Strona główna</a>   &nbsp &nbsp     <a href="#O_projekcie">O projekcie</a>    &nbsp &nbsp    <a href="index.html">Edytor muzyczny</a>  &nbsp &nbsp     <a href="strona.html#Stopka">Kontakt</a>   </span>
+			
 		</div>
+		
 		<div id="Zaloguj">
 			
 			<form type="button" role="form" method="GET"  action="{{ url_for('login') }}">
@@ -3788,12 +3799,16 @@ window.application = new Application();
 
 		</div>
 
-		<div id="Zarejestruj_">
-			<form type="button" role="form" method="GET"  action="{{ url_for('reg') }}">
-				<button>Zarejestruj </button>
-			</form>
 		
+		<img id="logo_bx" src="{{url_for('static', filename='s_image/logo_bx.png')}}">
+
 			
+		
+		
+
+
+	
+	
 	</div>
 </div>
 </body>
